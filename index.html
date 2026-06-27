@@ -1,1 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>" />
+</head>
+<body>
+  <h1>Image Gallery</h1>
+
+  <!-- Thumbnail grid -->
+  <div class="gallery">
+    <a href="#img1" class="thumb">
+      <img src="https://picsum.photos/id/1015/400/300" alt="Mountain landscape" />
+    </a>
+    <a href="#img2" class="thumb">
+      <img src="https://picsum.photos/id/1016/400/300" alt="Aerial view" />
+    </a>
+    <a href="#img3" class="thumb">
+      <img src="https://picsum.photos/id/1018/400/300" alt="Valley" />
+    </a>
+    <a href="#img4" class="thumb">
+      <img src="https://picsum.photos/id/1020/400/300" alt="Lake" />
+    </a>
+    <a href="#img5" class="thumb">
+      <img src="https://picsum.photos/id/1025/400/300" alt="Forest" />
+    </a>
+    <a href="#img6" class="thumb">
+      <img src="https://picsum.photos/id/1035/400/300" alt="Sunset" />
+    </a>
+  </div>
+
+  <!-- Lightbox overlays (one per image) -->
+  <!-- Each overlay is hidden by default, visible when its ID matches the URL hash -->
+  <div class="lightbox" id="img1">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1015/800/600" alt="Mountain landscape" />
+      <div class="nav">
+        <a href="#img6" class="prev">&#10094;</a>
+        <a href="#img2" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img2">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1016/800/600" alt="Aerial view" />
+      <div class="nav">
+        <a href="#img1" class="prev">&#10094;</a>
+        <a href="#img3" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img3">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1018/800/600" alt="Valley" />
+      <div class="nav">
+        <a href="#img2" class="prev">&#10094;</a>
+        <a href="#img4" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img4">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1020/800/600" alt="Lake" />
+      <div class="nav">
+        <a href="#img3" class="prev">&#10094;</a>
+        <a href="#img5" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img5">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1025/800/600" alt="Forest" />
+      <div class="nav">
+        <a href="#img4" class="prev">&#10094;</a>
+        <a href="#img6" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="img6">
+    <div class="lightbox-content">
+      <a href="#" class="close">&times;</a>
+      <img src="https://picsum.photos/id/1035/800/600" alt="Sunset" />
+      <div class="nav">
+        <a href="#img5" class="prev">&#10094;</a>
+        <a href="#img1" class="next">&#10095;</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
