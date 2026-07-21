@@ -37,8 +37,7 @@ The project demonstrates how elegant image browsing experiences can be achieved 
 
 ## Demo
 
-🌐 **Live Demo:** _Paste your Vercel deployment URL here_
-
+🌐 **Live Demo:** https://image-gallery-lovat-nine.vercel.app/
 ### Animated Preview
 
 ![Demo](./assets/demo.gif)
